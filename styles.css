@@ -1,1 +1,23 @@
-/*  your css code here. If applicable */
+/* style.css */
+.pulsating-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 20px; /* Adjusts the box's position, optional */
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1); /* Adjust scale to control the pulse size */
+    opacity: 0.5; /* Adjust opacity for the pulsating effect */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
